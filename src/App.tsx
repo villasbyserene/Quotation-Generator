@@ -31,8 +31,9 @@ function App() {
           elevation={2}
           sx={{
             backgroundColor: "#044231",
-            width: '99vw',
-            padding: '4px 8px'
+            width: "100vw",
+            py: { xs: 0.5, md: 1 },
+            px: { xs: 0, md: 0.5 },
           }}
         >
           <Toolbar className=" flex justify-between items-center">

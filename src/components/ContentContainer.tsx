@@ -16,7 +16,16 @@ const ContentContainer = () => {
         checkOut: "",
         guestCount: 1,
       },
-      items: [],
+      items: [
+        {
+        id: crypto.randomUUID(),
+        description: "",
+        pricingMode: "UNIT",
+        quantity: 1,
+        unitPrice: 0,
+        amount: 0,
+      },
+      ],
       notes: "",
     },
   });
@@ -27,7 +36,7 @@ const ContentContainer = () => {
   });
 
   return (
-    <div className="p-6">
+    <div className="p-2 md:p-6">
       <Box>
         <GuestDetailsForm control={control} />
         <ItemsTable control={control} />
