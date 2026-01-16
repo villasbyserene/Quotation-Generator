@@ -25,9 +25,9 @@ export default function DownloadPdfButton({
     const options = {
       margin,
       filename: fileName,
-      image: { type: "jpeg" as const, quality: 0.85 },
+      image: { type: "jpeg" as const, quality: 0.98 },
       html2canvas: {
-        scale: 1.5,
+        scale: 2,
         useCORS: true,
       },
       jsPDF: {
