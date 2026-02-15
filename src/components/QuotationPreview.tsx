@@ -132,7 +132,10 @@ export default function QuotationPreview({
             </Typography>
 
             <Typography align="left">
-              Guest count: {guest?.guestCount} pax
+              Guest count: {guest?.guestCount}
+            </Typography>
+            <Typography align="left">
+              Property Name: {guest?.propertyName}
             </Typography>
           </Box>
 

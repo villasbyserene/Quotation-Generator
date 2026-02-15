@@ -119,7 +119,7 @@ const GuestDetailsForm = ({ control }: Readonly<GuestDetailsFormProps>) => {
             render={({ field, fieldState }) => (
               <TextField
                 {...field}
-                label="company Phone Number"
+                label="Company Phone Number"
                 fullWidth
                 size="small"
                 error={!!fieldState.error}
@@ -218,7 +218,27 @@ const GuestDetailsForm = ({ control }: Readonly<GuestDetailsFormProps>) => {
             render={({ field, fieldState }) => (
               <TextField
                 {...field}
-                label="Guest Count (pax)"
+                label="Guest Count"
+                fullWidth
+                size="small"
+                error={!!fieldState.error}
+                helperText={fieldState.error?.message}
+              />
+            )}
+          />
+        </Grid>
+
+        <Grid size={{ xs: 12, md: 6 }}>
+          <Controller
+            name="guest.propertyName"
+            control={control}
+            rules={{
+              required: "Property Name required",
+            }}
+            render={({ field, fieldState }) => (
+              <TextField
+                {...field}
+                label="Property Name"
                 fullWidth
                 size="small"
                 error={!!fieldState.error}

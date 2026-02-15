@@ -15,6 +15,7 @@ const ContentContainer = () => {
         checkIn: "",
         checkOut: "",
         guestCount: 1,
+        propertyName: ""
       },
       items: [
         {
